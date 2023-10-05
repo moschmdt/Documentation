@@ -2,17 +2,18 @@ mkdir output
 
 pandoc \
     --pdf-engine=lualatex \
-    --resource-path=docs/Manual/ \
-    --template=docs/Manual/template.tex \
+    --resource-path=docs/soar_manual/ \
+    --template=docs/soar_manual/template.tex \
     --listings \
     --number-sections \
     -V geometry:"left=3cm, top=2.5cm, right=3cm, bottom=3cm" \
-    docs/Manual/01_Introduction.md \
-    docs/Manual/02_TheSoarArchitecture.md \
-    docs/Manual/03_SyntaxOfSoarPrograms.md \
-    docs/Manual/04_ProceduralKnowledgeLearning.md \
-    docs/Manual/05_ReinforcementLearning.md \
-    docs/Manual/06_SemanticMemory.md \
-    docs/Manual/07_EpisodicMemory.md \
-    docs/Manual/08_SpatialVisualSystem.md \
-    docs/Manual/09_SoarUserInterface.md -o output/SoarManual.pdf
+    docs/soar_manual/01_introduction.md \
+    docs/soar_manual/02_thesoararchitecture.md \
+    docs/soar_manual/03_syntaxofsoarprograms.md \
+    docs/soar_manual/04_proceduralknowledgelearning.md \
+    docs/soar_manual/05_reinforcementlearning.md \
+    docs/soar_manual/06_semanticmemory.md \
+    docs/soar_manual/07_episodicmemory.md \
+    docs/soar_manual/08_spatialvisualsystem.md \
+    docs/soar_manual/09_SoarUserInterface.md \
+    -o output/SoarManual.pdf
