@@ -6,6 +6,7 @@ pandoc \
     --template=docs/soar_manual/template.tex \
     --listings \
     --number-sections \
+    --lua-filter=docs/soar_manual/path_filter.lua \
     -V geometry:"left=3cm, top=2.5cm, right=3cm, bottom=3cm" \
     docs/soar_manual/01_introduction.md \
     docs/soar_manual/02_thesoararchitecture.md \

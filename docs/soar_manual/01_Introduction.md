@@ -37,38 +37,40 @@ We expect that novice Soar users will read the manual in the order it is present
 all users will makes use of the mechanisms described in chapters 4-8, but it is important to
 know that these capabilities exist.
 
-[Chapter 2](./02_TheSoarArchitecture.md) and [Chapter 3](./03_SyntaxOfSoarPrograms.md) 
-describe Soar from different perspectives: Chapter 2 describes the Soar
-architecture, but avoids issues of syntax, while Chapter 3 describes the syntax
-of Soar, including the specific conditions and actions allowed in Soar
-productions.
+[Chapter 2](./02_TheSoarArchitecture.md#the-soar-architecture) and [Chapter
+3](./03_SyntaxOfSoarPrograms.md#the-syntax-of-soar-programs) describe Soar from
+different perspectives: Chapter 2 describes the Soar architecture, but avoids
+issues of syntax, while Chapter 3 describes the syntax of Soar, including the
+specific conditions and actions allowed in Soar productions.
 
-[Chapter 4](./04_ProceduralKnowledgeLearning.md) describes chunking, Soar’s
-mechanism to learn new procedural knowledge (productions).
+[Chapter 4](./04_ProceduralKnowledgeLearning.md#procedural-knowledge-learning)
+describes chunking, Soar’s mechanism to learn new procedural knowledge
+(productions).
 
-[Chapter 5](./05_ReinforcementLearning.md) describes reinforcement learning
-(RL), a mechanism by which Soar’s procedural knowledge is tuned given task
-experience.
+[Chapter 5](./05_ReinforcementLearning.md#reinforcement-learning) describes
+reinforcement learning (RL), a mechanism by which Soar’s procedural knowledge is
+tuned given task experience.
 
-[Chapter 6](./06_SemanticMemory.md) and [Chapter 7](./07_EpisodicMemory.md)
-describe Soar’s long-term declarative memory systems, semantic and episodic.
+[Chapter 6](./06_SemanticMemory.md#semantic-memory) and [Chapter
+7](./07_EpisodicMemory.md#episodic-memory) describe Soar’s long-term declarative
+memory systems, semantic and episodic.
 
-[Chapter 8](./08_SpatialVisualSystem.md) describes the Spatial Visual System
-(SVS), a mechanism by which Soar can convert complex perceptual input into
-practical semantic knowledge.
+[Chapter 8](./08_SpatialVisualSystem.md#spatial-visual-system) describes the
+Spatial Visual System (SVS), a mechanism by which Soar can convert complex
+perceptual input into practical semantic knowledge.
 
-[Chapter 9](./09_SoarUserInterface.md) describes the Soar user interface — how
-the user interacts with Soar. The chapter is a catalog of user-interface
-commands, grouped by functionality. The most accurate and up-to-date information
-on the syntax of the Soar User Interface is found online, at the Soar web site,
-at <https://github.com/SoarGroup/Soar/wiki/CommandIndex>.
+[Chapter 9](./09_SoarUserInterface.md#the-soar-user-interface) describes the
+Soar user interface — how the user interacts with Soar. The chapter is a catalog
+of user-interface commands, grouped by functionality. The most accurate and
+up-to-date information on the syntax of the Soar User Interface is found online,
+at the Soar web site, at <https://github.com/SoarGroup/Soar/wiki/CommandIndex>.
 
 Advanced users will refer most often to Chapter 9, flipping back to Chapters 2 and 3 to
 answer specific questions.
 
 Chapters 2 and 3 make use of a Blocks World example agent. The Soar code for
 this agent can be downloaded at
-<https://web.eecs.umich.edu/~soar/blocksworld.soar> or found in this
+<https://web.eecs.umich.edu/~soar/blocksworld.soar> or found in 
 [here](../Code/blocksworld.md).
 
 ### Additional Back Matter
@@ -83,8 +85,9 @@ such as how to interface with a simulator, or how to create Soar applications
 using multiple interacting agents. The Soar project website (see link below)
 has additional help documents and resources.
 
-For novice Soar users, try [*The Soar 9 Tutorial*](./../Tutorials/index.md),
-which guides the reader through several example tasks and exercises.
+For novice Soar users, try [*The Soar 9
+Tutorial*](../tutorials/soar_tutorial/index.md), which guides the reader through
+several example tasks and exercises.
 
 ## Contacting the Soar Group
 
