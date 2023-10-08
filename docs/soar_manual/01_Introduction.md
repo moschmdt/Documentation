@@ -70,8 +70,8 @@ answer specific questions.
 
 Chapters 2 and 3 make use of a Blocks World example agent. The Soar code for
 this agent can be downloaded at
-<https://web.eecs.umich.edu/~soar/blocksworld.soar> or found in 
-[here](../Code/blocksworld.md).
+<https://web.eecs.umich.edu/~soar/blocksworld.soar> or found
+[here](blocksworld.md).
 
 ### Additional Back Matter
 
@@ -85,9 +85,8 @@ such as how to interface with a simulator, or how to create Soar applications
 using multiple interacting agents. The Soar project website (see link below)
 has additional help documents and resources.
 
-For novice Soar users, try [*The Soar 9
-Tutorial*](../tutorials/soar_tutorial/index.md), which guides the reader through
-several example tasks and exercises.
+For novice Soar users, try [*The Soar 9 Tutorial*](../tutorials/soar_tutorial/index.md),
+which guides the reader through several example tasks and exercises.
 
 ## Contacting the Soar Group
 

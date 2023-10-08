@@ -345,9 +345,13 @@ operator. Normal updates correspond to traditional RL theory (showing the Sarsa
 case for simplicity):
 
 $$ \delta_{ECR} = \alpha \left[ r_t - ECR(s_t, a_t) \right] $$
+
 $$ \delta_{EFR} = \alpha \left[ \gamma Q(s_{t+1}, a_{t+1}) - EFR(s_t, a_t) \right] $$ 
-$$ \delta_t = \delta_{ECR} + \delta_{EFR} $$ 
+
+$$ \delta_t = \delta_{ECR} + \delta_{EFR} $$
+
 $$ = \alpha \left[ r_t + \gamma Q(s_{t+1}, a_{t+1}) - \left( ECR(s_t, a_t) + EFR(s_t, a_t) \right) \right] $$
+
 $$ = \alpha \left[ r_t + \gamma Q(s_{t+1}, a_{t+1}) - Q(s_t, a_t) \right] $$
 
 During substate retraction, only the ECR is updated based on the reward signals

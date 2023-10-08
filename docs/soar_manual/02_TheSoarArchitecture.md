@@ -112,8 +112,9 @@ table); and the goal is to build a tower withAon top,Bin the middle, andCon the 
 The initial state and the goal are illustrated in Figure 2.2.
 
 The Soar code for this task is available online at
-<https://web.eecs.umich.edu/~soar/blocksworld.soar> or in the [here](./../Code/blocksworld.md).
-You do not need to look at the code at this point.
+<https://web.eecs.umich.edu/~soar/blocksworld.soar> or in the
+[here](blocksworld.md#blocksworld-soar-rules).  You do not need to look at the
+code at this point.
 
 ![The initial state and goal of the "blocks-world" task.](./Images/blocks.svg)
 
@@ -596,7 +597,7 @@ worst preference are similar to those for the `best` preference.
 is positive knowledge that a single value is as good or as bad a choice as other
 expected alternatives.  When two or more competing values both have indifferent
 preferences, by default, Soar chooses randomly from among the alternatives. (The
-[`decide indifferent-selection` function](./../CLI/cmd_decide.md) can be used to change this behavior).
+[`decide indifferent-selection` function](../reference/cli/cmd_decide.md) can be used to change this behavior).
 
 - **Binary Indifferent (=value)** A `binary indifferent` preference states that two values
 are mutually indifferent and it does not matter which of these values are selected. It
@@ -611,10 +612,10 @@ set of competing operator values have `numeric-indifferent` preferences, the
 decision mechanism will choose an operator based on their numeric-indifferent
 values and the exploration policy. The available exploration policies and how
 they calculate selection probability are detailed in the [documentation for the
-indifferent-selection command](../CLI/cmd_decide.md). When a single operator is
+indifferent-selection command](../reference/cli/cmd_decide.md). When a single operator is
 given multiple `numeric-indifferent` preferences, they are either averaged or
 summed into a single value based on the setting of the
-[`numeric-indifferent-mode` command](../CLI/cmd_decide.md). Numeric-indifferent
+[`numeric-indifferent-mode` command](../reference/cli/cmd_decide.md). Numeric-indifferent
 preferences that are created by RL rules can be adjusted by the reinforcement
 learning mechanism. In this way, it’s possible for an agent to begin a task with
 only arbitrarily initialized numeric indifferent preferences and with experience
@@ -737,7 +738,7 @@ has a binary indifferent preference with every other candidate. If one of the ca
 fails this test, then the procedure signals a tie impasse and returns the complete set of
 candidates that were passed into the IndifferentFilter. Otherwise, the candidates are
 mutually indifferent, in which case an operator is chosen according to the method set
-by the [`decide indifferent-selection` command](../CLI/cmd_decide.md).
+by the [`decide indifferent-selection` command](../reference/cli/cmd_decide.md).
 
 ## Soar’s Execution Cycle: Without Substates
 
@@ -1212,8 +1213,8 @@ substate knowledge). Whenever such an o-supported WME is created, Soar records
 which superstate WMEs were tested, directly or indirectly, to create it.
 Whenever any of the WMEs in the dependency set of a substate change, the
 substate is regenerated. (See Sections
-[print](./../CLI/cmd_print.md#printing-the-goal-dependency-set)  and
-[trace](./../CLI/cmd_trace.md#trace-levels) for how to examine GDS information
+[print](../reference/cli/cmd_print.md#printing-the-goal-dependency-set)  and
+[trace](../reference/cli/cmd_trace.md#trace-levels) for how to examine GDS information
 through the user-interface.)
 
 Note that the creation of i-supported structures in a subgoal does not increase

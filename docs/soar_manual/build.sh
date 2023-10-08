@@ -17,4 +17,5 @@ pandoc \
     docs/soar_manual/07_episodicmemory.md \
     docs/soar_manual/08_spatialvisualsystem.md \
     docs/soar_manual/09_SoarUserInterface.md \
+    docs/reference/cli/* \
     -o output/SoarManual.pdf

@@ -298,7 +298,7 @@ created and propagated using the following rules:
       generality when learning. See section 
       [Using Singletons to Simplify a Rule's Conditions](#using-singletons-to-simplify-a-rules-conditions).
       The full list of architecturally-created singletons can be found
-      in the [`chunk` command’s](./../CLI/cmd_chunk.md) help entry.
+      in the [`chunk` command’s](../reference/cli/cmd_chunk.md) help entry.
 
 Note that rule 1 may conflict with other rules. For example, if a variable
 appears in two different conditions, then two different identities may propagate

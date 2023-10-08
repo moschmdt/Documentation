@@ -6,13 +6,13 @@ Soar command prompt.
 
 This chapter is organized into 7 sections:
 
-1.  Basic Commands for Running Soar
-1.  Examining Memory
-1.  Configuring Trace Information and Debugging
-1.  Configuring Soar’s Run-Time Parameters
-1.  File System I/O Commands
-1.  Soar I/O commands
-1.  Miscellaneous Commands
+1. Basic Commands for Running Soar
+1. Examining Memory
+1. Configuring Trace Information and Debugging
+1. Configuring Soar’s Run-Time Parameters
+1. File System I/O Commands
+1. Soar I/O commands
+1. Miscellaneous Commands
 
 Each section begins with a summary description of the commands covered
 in that section, including the role of the command and its importance to
@@ -69,7 +69,7 @@ settings for Soar.
 
 The specific commands described in this section are:
 
-- [soar](./../CLI/cmd_soar.md)  
+- [soar](../reference/cli/cmd_soar.md#soar)  
   Commands and settings related to running Soar. Use **soar ?**
   for a summary of sub-commands listed below.
   
@@ -122,16 +122,16 @@ The specific commands described in this section are:
       Generate a wait state rather than a state-no-change
       impasse.
 
-- [run](./../CLI/cmd_run.md)  
+- [run](../reference/cli/cmd_run.md#run)  
   Begin Soar’s execution cycle.
 
 - exit  
   Shut down the Soar environment. Terminates Soar and exits the kernel. `stop exit`
 
-- [help](./../CLI/cmd_help.md)  
+- [help](../reference/cli/cmd_help.md#help)  
   Provide formatted, on-line information about Soar commands.
 
-- [decide](./../CLI/cmd_decide.md)   
+- [decide](../reference/cli/cmd_decide.md#decide)
   Commands and settings related to the selection of operators
   during the Soar decision process
   
@@ -150,7 +150,7 @@ The specific commands described in this section are:
     - decide set-random-seed  
       Seed the random number generator.
 
-- [alias](./../CLI/cmd_alias.md)  
+- [alias](../reference/cli/cmd_alias.md#alias)  
   Define a new alias, or command, using existing commands and
   arguments.
 
@@ -167,14 +167,14 @@ the contents and statistics of procedural memory.
 
 The specific commands described in this section are:
 
-- [sp](./../CLI/cmd_sp.md)  
+- [sp](../reference/cli/cmd_sp.md#sp)  
   Create a production and add it to production memory.
 
-- [gp](./../CLI/cmd_gp.md)  
+- [gp](../reference/cli/cmd_gp.md#gp)  
   Define a pattern used to generate and source a set of Soar
   productions.
 
-- [production](./../CLI/cmd_production.md)  
+- [production](../reference/cli/cmd_production.md#production)  
   Commands to manipulate Soar rules and analyze their usage
   
     - production break  
@@ -222,12 +222,12 @@ memory.
 
 The specific commands described in this section are:
 
-- [print](./../CLI/cmd_print.md)  
+- [print](../reference/cli/cmd_print.md#print)  
   Print items in working, semantic and production memory. Can
   also print the print the WMEs in the goal dependency set for each
   goal.
 
-- [wm](./../CLI/cmd_wm.md)  
+- [wm](../reference/cli/cmd_wm.md#wm)  
   Commands and settings related to working memory and working memory
   activation.
   
@@ -244,10 +244,10 @@ The specific commands described in this section are:
       Print information about wmes that match a certain pattern
       as they are added and removed.
 
-- [preferences](./../CLI/cmd_preferences.md)  
+- [preferences](../reference/cli/cmd_preferences.md#preferences)  
   Examine items in preference memory.
 
-- [svs](./../CLI/cmd_svs.md)  
+- [svs](../reference/cli/cmd_svs.md#svs)  
   Perform spatial visual system commands.
 
 Of these commands, **print** is the most often used (and the most
@@ -261,11 +261,11 @@ This section describes the commands for enabling and configuring Soar’s
 mechanisms of chunking and reinforcement learning. The specific commands
 described in this section are:
 
-- [chunk](./../CLI/cmd_chunk.md)  
+- [chunk](../reference/cli/cmd_chunk.md#chunk)  
   Set the parameters for explanation-based chunking, Soar’s
   learning mechanism.
 
-- [rl](./../CLI/cmd_rl.md)  
+- [rl](../reference/cli/cmd_rl.md#rl)  
   Get/Set RL parameters and statistics.
 
 ## Long-term Declarative Memory
@@ -274,10 +274,10 @@ This section describes the commands for enabling and configuring Soar’s
 long-term semantic memory and episodic memory systems. The specific
 commands described in this section are:
 
-- [smem](./../CLI/cmd_smem.md)  
+- [smem](../reference/cli/cmd_smem.md#smem)  
   Get/Set semantic memory parameters and statistics.
 
-- [epmem](./../CLI/cmd_epmem.md)  
+- [epmem](../reference/cli/cmd_epmem.md#epmem)  
   Get/Set episodic memory parameters and statistics.
 
 ## Other Debugging Commands
@@ -292,10 +292,10 @@ Soar’s performance.
 
 The specific commands described in this section are:
 
-- [trace](./../CLI/cmd_trace.md)  
+- [trace](../reference/cli/cmd_trace.md#trace)  
   Control the information printed as Soar runs. *(was watch)*
 
-- [output](./../CLI/cmd_output.md)  
+- [output](../reference/cli/cmd_output.md#output)  
   Controls sub-commands and settings related to Soar’s output.
   
     - output enabled  
@@ -328,17 +328,17 @@ The specific commands described in this section are:
       Set whether or not commands are echoed to other connected
       debuggers.
 
-- [explain](./../CLI/cmd_explain.md)  
+- [explain](../reference/cli/cmd_explain.md#explain)  
   Provides interactive exploration of why a rule was learned.
 
-- [visualize](./../CLI/cmd_visualize.md)  
+- [visualize](../reference/cli/cmd_visualize.md#visualize)  
   Creates graph visualizations of Soar’s memory systems or
   processing.
 
-- [stats](./../CLI/cmd_stats.md)  
+- [stats](../reference/cli/cmd_stats.md#stats)  
   Print information on Soar’s runtime statistics.
 
-- [debug](./../CLI/cmd_debug.md)  
+- [debug](../reference/cli/cmd_debug.md#debug)  
   Contains commands that provide access to Soar’s internals. Most
   users will not need to access these commands
   
@@ -368,13 +368,13 @@ save/retrieve information to/from files, redirect the information
 printed by Soar as it runs, and save and load the binary representation
 of productions. The specific commands described in this section are:
 
-- [cd](./../CLI/cmd_file_system.md)  
+- [cd](../reference/cli/cmd_file_system.md#cd)  
   Change directory.
 
-- [dirs](./../CLI/cmd_file_system.md)  
+- [dirs](../reference/cli/cmd_file_system.md#dirs)  
   List the directory stack.
 
-- [load](./../CLI/cmd_load.md)  
+- [load](../reference/cli/cmd_load.md#load)  
   Loads soar files, rete networks, saved percept streams and
   external libraries.
   
@@ -407,7 +407,7 @@ of productions. The specific commands described in this section are:
 - pwd  
   Print the current working directory.
 
-- [save](./../CLI/cmd_save.md)  
+- [save](../reference/cli/cmd_save.md#save)  
   Saves chunks, rete networks and percept streams.
   
     - save agent  
@@ -424,10 +424,10 @@ of productions. The specific commands described in this section are:
       Saves the current rete networks that represents rules
       loaded in production memory.
 
-- [echo](./../CLI/cmd_echo.md)  
+- [echo](../reference/cli/cmd_echo.md#echo)  
   Prints a string to the current output device.
 
-(See also the [output command](./../CLI/cmd_output.md).)
+(See also the [output command](../reference/cli/cmd_output.md#ouput).)
 
 The **load file** command, previously known as **source**, is used for nearly every
 Soar program. The directory functions are important to understand so that users

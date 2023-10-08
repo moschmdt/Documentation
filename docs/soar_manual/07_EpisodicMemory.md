@@ -14,7 +14,7 @@ performance](#performance).  The detailed behavior of episodic memory is
 determined by numerous parameters that can be controlled and configured via the
 `epmem` command.
 
-Please refer to the [documentation for the `epmem` command](./../CLI/cmd_epmem.md).
+Please refer to the [documentation for the `epmem` command](../reference/cli/cmd_epmem.md).
 
 ## Working Memory Structure
 
@@ -35,7 +35,7 @@ memory will maintain these WMEs.
 
 The value of the present-id augmentation is an integer and will update to expose
 to the agent the current episode number. This information is identical to what
-is available via the [time statistic](./../CLI/cmd_stats.md) and the present-id retrieval meta-data (7.3.4).
+is available via the [time statistic](../reference/cli/cmd_stats.md) and the present-id retrieval meta-data (7.3.4).
 
 ## Episodic Storage
 
