@@ -3,7 +3,7 @@ name: Generate PDF Documenatation
 on: 
   push:
     branches:
-      development
+      main
 
 jobs:
   convert_via_pandoc:
@@ -11,7 +11,7 @@ jobs:
     container: pandoc/latex:latest
     steps:
       - uses: actions/checkout@v3
-      - run: ./docs/Manual/build.sh
+      - run: ./docs/soar_manual/build.sh
       - uses: actions/upload-artifact@v3
         with:
           name: output
