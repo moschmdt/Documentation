@@ -1,0 +1,3 @@
+[submodule "Soar"]
+	path = Soar
+	url = git@github.com:moschmdt/Soar.git

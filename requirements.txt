@@ -4,3 +4,4 @@ python-markdown-math==0.8
 mkdocs-macros-plugin==1.*
 pygments @ git+https://github.com/moschmdt/pygments@feature/soar
 pre-commit==3.8.*
+mkdoxy==1.2.*

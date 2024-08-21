@@ -10,7 +10,6 @@ theme:
   locale: en
   logo: Images/soar.png
   favicon: Images/soar.png
-  custom_dir: overrides
   icon:
     admonition:
       note: octicons/tag-16
@@ -246,6 +245,29 @@ nav:
           - trace: reference/cli/cmd_trace.md
           - visualize: reference/cli/cmd_visualize.md
           - wm: reference/cli/cmd_wm.md
+      - Soar SML API:
+          - reference/SoarSML/README.md
+          - "Classes":
+              - "Class List": "SoarSML/annotated.md"
+              - "Class Index": "SoarSML/classes.md"
+              - "Class Hierarchy": "SoarSML/hierarchy.md"
+              - "Class Members": "SoarSML/class_members.md"
+              - "Class Member Functions": "SoarSML/class_member_functions.md"
+              - "Class Member Variables": "SoarSML/class_member_variables.md"
+              - "Class Member Typedefs": "SoarSML/class_member_typedefs.md"
+              - "Class Member Enumerations": "SoarSML/class_member_enums.md"
+      - Soar Kernel API:
+          - reference/KernelAPI/README.md
+          - "Classes":
+              - "Class List": "Kernel/annotated.md"
+              - "Class Index": "Kernel/classes.md"
+              - "Class Hierarchy": "Kernel/hierarchy.md"
+              - "Class Members": "Kernel/class_members.md"
+              - "Class Member Functions": "Kernel/class_member_functions.md"
+              - "Class Member Variables": "Kernel/class_member_variables.md"
+              - "Class Member Typedefs": "Kernel/class_member_typedefs.md"
+              - "Class Member Enumerations": "Kernel/class_member_enums.md"
+
   - Tag Index: home/tags.md
 
 plugins:
@@ -255,6 +277,20 @@ plugins:
       on_undefined: strict
   - tags:
       tags_file: home/tags.md
+  - mkdoxy:
+      projects:
+        SoarSML:
+          src-dirs: Soar/Core/CLI/ Soar/Core/ClientSML/ Soar/Core/ConnectionSML/ Soar/Core/ElementXML/ Soar/Core/KernelSML/
+          full-doc: True
+          doxy-cfg:
+            FILE_PATTERNS: "*.cpp *.h*"
+            RECURSIVE: True
+        Kernel:
+          src-dirs: Soar/Core/SoarKernel/
+          full-doc: True
+          doxy-cfg:
+            FILE_PATTERNS: "*.cpp *.h*"
+            RECURSIVE: True
 
 hooks:
   - hooks.py
